@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="https://coding96.ru/jquery.js"></script>
+    <script src="https://coding96.ru/cookie.js"></script>
+    <script src="script.js"></script>
+    <title>PROJECT</title>
+</head>
+<body>
+    <div class="top">
+        <div id="logo">SHOP</div>
+        <div id="contact">
+            <a href="#" target="_blank" class="contact_vk">VK  </a>
+            <a href="#" target="_blank"  class="contact_tg">Telegram</a>
+            <a href="#" target="_blank"  class="contact_support">Support</a>
+        </div>
+        <!-- <div class="searches">
+            <input type="text" id="searches" placeholder="Search">
+            <button id="search" onclick="search()">Find</button>
+            
+        </div> -->
+        <div id="personal_area">
+            <div class="but_prl_area">
+                <button id="log" onclick="login()">Login</button>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="block_reg">
+            <div class="title_br">Authorization</div>
+            <div class="inp">
+                <input class="inp_l" type="text" placeholder="Login">
+                <input class="inp_p" type="password" placeholder="Password">
+            </div>
+            <button class="login" onclick="auth()">Login</button>
+        </div>
+        <div class="order_block">
+            <div class="title_br">Order</div>
+            <div class="inp">
+                <input class="inp_order" type="number" placeholder="card number">
+                <p class="info">Enter card number</p>
+            </div>
+            <button class="login" onclick="od()">Order</button>
+        </div>
+        <div id="main">
+            <div class="item1">
+                <div class="img_product">
+                    <img src="skins/gloves.png" class="img">
+                </div>
+                <div class="name_product">
+                    <p class="name_item">Pandora box |</p> <p class="price_item">16683$</p>
+                </div>
+                <button class="buy" onclick="buy('product1')">Buy</button>
+            </div>
+            <div class="item1">
+                <div class="img_product">
+                    <img src="skins/red.png" class="img">
+                </div>
+                <div class="name_product">
+                    <p class="name_item">Doppler Ruby |</p> <p class="price_item">16683$</p>
+                </div>
+                <button class="buy" onclick="buy('product2')">Buy</button>
+            </div>
+            <div class="item1">
+                <div class="img_product">
+                    <img src="skins/Gungnir.png" class="img">
+                </div>
+                <div class="name_product">
+                     <p class="name_item">Gungnir |</p> <p class="price_item">20470$</p>
+                </div>
+                <button class="buy" onclick="buy('product3')">Buy</button>
+            </div>
+            <div class="item1">
+                <div class="img_product">
+                    <img src="skins/gold_ak.png" class="img">
+                </div>
+                <div class="name_product">
+                    <p class="name_item">Gold Arabesque |</p><p class="price_item">20470$</p>
+                </div>
+                <button class="buy" onclick="buy('product4')">Buy</button>
+            </div>
+            <div class="item1">
+                <div class="img_product">
+                    <img src="skins/Howl.png" class="img">
+                </div>
+                <div class="name_product">
+                    <p class="name_item">Howl  |</p><p class="price_item">11258$</p>
+                </div>
+                <button class="buy" onclick="buy('product5')">Buy</button>
+            </div>
+             <div class="item1">
+                <div class="img_product">
+                    <img src="skins/emerald.png" class="img">
+                </div>
+                <div class="name_product">
+                    <p class="name_item">Gamma Doppler | </p><p class="price_item">21494$</p>
+                </div>
+                <button class="buy" onclick="buy('product6')">Buy</button>
+            </div>
+            <div class="item1">
+                <div class="img_product">
+                    <img src="skins/blue_m9.png" class="img">
+                </div>
+                <div class="name_product">
+                    <p class="name_item"> Doppler Sapphire  | </p><p class="price_item">16683$</p>
+                </div>
+                <button class="buy" onclick="buy('product7')">Buy</button>
+            </div>
+             <div class="item1">
+                <div class="img_product">
+                    <img src="skins/red_line.png" class="img">
+                </div>
+                <div class="name_product">
+                    <p class="name_item">Red line  | </p><p class="price_item">62$</p></div>
+                <button class="buy" onclick="buy('product8')">Buy</button>
+            </div>
+            <div class="item1">
+                <div class="img_product">
+                    <img src="skins/reg_m9.png" class="img">
+                </div>
+                <div class="name_product">
+                    <p class="name_item">Doppler Ruby | </p><p class="price_item">16683$</p></div>
+                <button class="buy" onclick="buy('product9')">Buy</button>
+            </div>
+            <div class="item1">
+                <div class="img_product">
+                    <img src="skins/reg_talon.png" class="img">
+                </div>
+                <div class="name_product">
+                    <p class="name_item">Crimson Web | </p><p class="price_item">15353$</p>
+                </div>
+                <button class="buy" onclick="buy('product10')">Buy</button>
+            </div>
+            <div class="item1">
+                <div class="img_product">
+                    <img src="skins/sticker.png" class="img">
+                </div>
+                <div class="name_product">
+                    
+                    
+                    <p class="name_item">iBUYPOWER (Holo) | </p><p class="price_item">103377$</p>
+                </div>
+                <button class="buy" onclick="buy('product11')">Buy</button>
+            </div>
+            <div class="item1">
+                <div class="img_product">
+                    <img src="skins/blue.png" class="img">
+                </div>
+                <div class="name_product">
+                    <p class="name_item">Doppler Sapphire | </p><p class="price_item">16376$</p></div>
+                <button class="buy" onclick="buy('product12')">Buy</button>
+            </div>
+
+        </div>
+        <div id="sidebar">
+            <div class="fa fa-cart-arrow-down" id="cart">Basket:</div>
+            <button class="order" onclick="order()">Order</button>
+        </div>
+    </div>
+
+    <div class="futer"></div>
+</body>
+</html>
