@@ -97,7 +97,7 @@ function od(){
     
 
     if(score <= 0 && order.length == 16){
-        alert('Выберите скин')
+        alert('Choose a skin')
     }
     if(order.length == 16 && score >= 1){
         $('.order_block').fadeOut()
