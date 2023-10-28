@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
+    <link rel="stylesheet" href="table.css">
+    <link rel="stylesheet" href="pc.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <script src="https://coding96.ru/jquery.js"></script>
     <script src="https://coding96.ru/cookie.js"></script>
@@ -160,8 +163,13 @@
             <div class="fa fa-cart-arrow-down" id="cart">Basket:</div>
             <button class="order" onclick="order()">Order</button>
         </div>
+        <div id="menu">
+            <div id="info">Menu</div>
+            <div class="blc">Balance: 100000$</div>
+            <button class="fa fa-dollar balance" onclick="balance()">Top up your balance</button>
+        </div>
     </div>
 
-    <div class="futer"></div>
+    <!-- <div class="futer"></div> -->
 </body>
 </html>

@@ -28,7 +28,8 @@ function login(){
 function auth(){
     let lgn = $('.inp_l').val();
     login_user = lgn
-    
+    let pass = $('.inp_p').val();
+    pass_user = pass
     if(login_user != '' && login_user != 'admin123' && lgn.length <= 8 && lgn.length > 0){
         
         document.cookie = 'login_user = ' + login_user
@@ -108,3 +109,6 @@ function od(){
     }
     
 }
+// function balance{
+
+// }
